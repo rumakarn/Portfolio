@@ -28,6 +28,20 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
+
+/* styles.css */
+.cursor-light {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none; /* Ensure it doesn't interfere with cursor interaction */
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Place it above other elements */
+  transition: transform 0.1s ease-out;
+}
+
 header {
   top: 0;
   left: 0;
@@ -78,9 +92,14 @@ section {
 
 /* home section */
 .home {
-  display: flex;
-  padding: 0 9%;
-margin-top: 15rem;
+  
+    display: flex;
+    padding: 0 9%;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background: rgba(0, 0, 0, 0.1); /* Adjust opacity here */
+    background-image: url(../images/home_bg.jpg);
+   height: auto;
 }
 .home-content {
   
@@ -232,7 +251,6 @@ margin-top: 15rem;
 
 /* about section */
 .about {
-  margin-top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -705,11 +723,11 @@ main{
 
 @media (max-width: 950px) {
   .home {
-    margin: 15rem 0;
+    padding-top: 15rem ;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .header {
     background: var(--bg-color);
   }
@@ -790,7 +808,7 @@ main{
 }
 @media (max-width: 500px) {
   .home {
-    margin: 10rem 0 0 -1.25rem;
+    padding: 10rem 0 0 -1.25rem;
   }
   .home-content h1 {
     font-size: 3.6rem;

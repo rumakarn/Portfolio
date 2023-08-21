@@ -1,6 +1,27 @@
 //toggling navbar
 const toggleBtn = document.querySelector('.toggle-btn');
 const iconElement = toggleBtn.querySelector("i"); // Get the <i> element
+const home=document.querySelector(".home");
+const initialBackground = getComputedStyle(document.querySelector('.home')).background;
+
+
+// script.js
+
+
+// script.js
+const cursorLight = document.querySelector('.cursor-light');
+const lightSize = 20; // Size of the cursor light element
+
+document.addEventListener('mousemove', (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+
+  const offsetX = -(lightSize / 2); // Adjust for half of the light's width
+  const offsetY = -(lightSize / 2); // Adjust for half of the light's height
+
+  cursorLight.style.transform = `translate(${x + offsetX}px, ${y + offsetY}px)`;
+});
+
 
 
 toggleBtn.addEventListener('click', () => {
@@ -8,9 +29,13 @@ toggleBtn.addEventListener('click', () => {
   if (document.documentElement.classList.contains('light-theme')) {
     iconElement.className = 'bx bx-moon'; // Change the icon class to moon icon
     // Additional actions for enabling light mode if needed
+    home.style.background="white";
+    
   } else {
     iconElement.className = 'bx bx-sun'; // Change the icon class back to sun icon
     // Additional actions for disabling light mode if needed
+    home.style.background = initialBackground;
+
   }
 }
 );
@@ -57,6 +82,29 @@ window.onscroll = () => {
   menuIcon.classList.remove('bx-x');
   navbar.classList.remove('active');
 };
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const readMoreButton = document.querySelector('.read-more');
+  const moreContent = document.querySelector('.more-content');
+
+  readMoreButton.addEventListener('click', () => {
+    if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+      // If moreContent is hidden, show it
+      moreContent.style.display = 'block';
+      readMoreButton.textContent = 'Read less';
+    } else {
+      // If moreContent is visible, hide it
+      moreContent.style.display = 'none';
+      readMoreButton.textContent = 'Read more';
+    }
+  });
+});
+
+
+
+
+
 
 const slides = document.querySelectorAll(".slides");
 console.log(slides);
