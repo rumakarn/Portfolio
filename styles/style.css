@@ -33,15 +33,11 @@ body {
 .cursor-light {
   width: 12px;
   height: 12px;
-<<<<<<< HEAD
   background: linear-gradient(
     180.3deg,
     rgb(221, 221, 221) 5.5%,
     rgb(110, 136, 161) 90.2%
   );
-=======
-  background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
->>>>>>> cb069a3cf7e6b878cfdfca9398ea0adb2f9e9127
   border-radius: 50%;
   position: fixed;
   pointer-events: none; /* Ensure it doesn't interfere with cursor interaction */
@@ -100,7 +96,6 @@ section {
 
 /* home section */
 .home {
-<<<<<<< HEAD
   display: flex;
   padding: 0 9%;
   padding-top: 15rem;
@@ -108,16 +103,6 @@ section {
   background: rgba(0, 0, 0, 0.1); /* Adjust opacity here */
   background-image: url(../images/home_bg.jpg);
   height: auto;
-=======
-  
-    display: flex;
-    padding: 0 9%;
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-    background: rgba(0, 0, 0, 0.1); /* Adjust opacity here */
-    background-image: url(../images/home_bg.jpg);
-   height: auto;
->>>>>>> cb069a3cf7e6b878cfdfca9398ea0adb2f9e9127
 }
 .home-content {
   display: flex;
@@ -733,11 +718,7 @@ main {
 
 @media (max-width: 950px) {
   .home {
-<<<<<<< HEAD
     padding-top: 15rem;
-=======
-    padding-top: 15rem ;
->>>>>>> cb069a3cf7e6b878cfdfca9398ea0adb2f9e9127
   }
 }
 
