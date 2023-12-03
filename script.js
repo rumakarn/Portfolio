@@ -9,6 +9,7 @@ const initialBackground = getComputedStyle(document.querySelector('.home')).back
 
 
 // script.js
+<<<<<<< HEAD
 document.getElementById('open-resume-button').addEventListener('click', function() {
  
   var resumeURL = 'your_resume.pdf';
@@ -16,6 +17,8 @@ document.getElementById('open-resume-button').addEventListener('click', function
   window.open("https://drive.google.com/file/d/1ghHXEpmi7yrslpupWI7lq76X1WQGrE_H/view?usp=drive_link", '_blank');
 });
 
+=======
+>>>>>>> cb069a3cf7e6b878cfdfca9398ea0adb2f9e9127
 const cursorLight = document.querySelector('.cursor-light');
 const lightSize = 20; // Size of the cursor light element
 
