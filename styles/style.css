@@ -317,6 +317,83 @@ span {
   background: var(--second-bg-color);
 }
 
+.profile-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 23px 0;
+}
+
+.profile-container h1 {
+  text-align: center;
+  margin-bottom: 23px;
+  color: #fff;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-box {
+  margin: 0px 12px;
+  text-align: center;
+  background: #1f283b;
+  color: #fff;
+  border-radius: 17px;
+  padding: 0 12px;
+}
+
+.profile-box h2 {
+  margin: 27px 0 23px;
+}
+
+.profile-box ul {
+  list-style: none;
+  color: #ddd;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.profile-box ul li {
+  padding: 9px 63px;
+}
+
+.profile-box ul li::before {
+  content: "\2022";
+  color: #e33058;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.profile-box .btn {
+  font-size: 16px;
+  margin: 23px 23px;
+  border: 2px solid #e33058;
+  padding: 12px 0px;
+  border-radius: 5px;
+  margin: 25px 35px 25px 35px;
+  transition: all 0.5s;
+}
+
+.profile-box .btn:hover {
+  background-color: #e33058;
+  cursor: pointer;
+}
+.profile-box span {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .price-row {
+    flex-wrap: wrap;
+  }
+
+  .profile-box {
+    margin: 12px 23px;
+  }
+}
+
 /* education section */
 
 .education {

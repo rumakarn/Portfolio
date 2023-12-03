@@ -108,6 +108,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.getElementById("gfg").addEventListener("click", function () {
+  window.open("https://auth.geeksforgeeks.org/user/underdog_geek", "_blank");
+});
+
+document.getElementById("leetcode").addEventListener("click", function () {
+  window.open("https://leetcode.com/rumakarn/", "_blank");
+});
+
+document.getElementById("codechef").addEventListener("click", function () {
+  window.open("https://www.codechef.com/users/rumakarn", "_blank");
+});
+
+document.getElementById("codeforces").addEventListener("click", function () {
+  window.open("https://codeforces.com/profile/rumakarn", "_blank");
+});
 const slides = document.querySelectorAll(".slides");
 console.log(slides);
 var counter = 0;
