@@ -596,6 +596,10 @@ main {
   height: 100%;
   width: 100%;
 }
+
+.slider-container {
+  overflow: hidden;
+}
 .sliderBtn {
   display: flex;
   align-items: center;
@@ -635,7 +639,7 @@ main {
   .slider-container {
     max-width: 100%;
     height: 300px; /* Adjust max-width for smaller screens */
-    scroll-behavior: smooth;
+    overflow: hidden;
   }
 
   .overlay-link {
