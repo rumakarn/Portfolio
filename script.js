@@ -14,7 +14,7 @@ document
     var resumeURL = "your_resume.pdf";
 
     window.open(
-      "https://drive.google.com/file/d/1ghHXEpmi7yrslpupWI7lq76X1WQGrE_H/view?usp=drive_link",
+      "https://drive.google.com/file/d/1XpTcZb4zWruoTXz0W4YracDq7RGqnSox/view?usp=drive_link",
       "_blank"
     );
   });

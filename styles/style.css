@@ -393,6 +393,63 @@ span {
     margin: 12px 23px;
   }
 }
+/* internship section */
+
+/* Internship section */
+.internship {
+  padding: 10rem 9% 2rem;
+  background-color: var(--second-bg-color);
+}
+
+.internship .heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.internship-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.internship-column {
+  flex: 1 1 50%;
+}
+
+.internship-img img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.internship-content {
+  background-color: var(--bg-color);
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.internship-content .title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.internship-content p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: var(--text-color);
+}
+/* CSS for increasing font size */
+.internship-details {
+  font-size: 18px; /* Adjust the font size as per your preference */
+  line-height: 1.6; /* Optional: Adjust line height for better readability */
+}
 
 /* education section */
 
@@ -958,5 +1015,19 @@ main {
 @keyframes showRight {
   100% {
     width: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .internship-row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .internship-column {
+    flex: 1 1 auto;
+  }
+
+  .internship-img img {
+    width: 100%;
   }
 }
